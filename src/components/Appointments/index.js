@@ -63,7 +63,7 @@ class Appointments extends Component {
     this.setState({titleInput: event.target.value})
   }
 
-  getFilteredAppointmentsLists = () => {
+  getFilteredAppointmentsList = () => {
     const {appointmentsList, isFilterActive} = this.state
     if (isFilterActive) {
       return appointmentsList.filter(
